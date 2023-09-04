@@ -32,7 +32,7 @@ jobs:
       run: |
         sudo -i
         cd $GITHUB_WORKSPACE
-        git clone -b camellia-r-oss https://github.com/sojava-code/kernel_xiaomi_camellia
+        git clone -b camellia-r-oss https://github.com/sojava-code/kernel_xiaomi_camellia android_kernel_xiaomi_cannon
         cd android_kernel_xiaomi_cannon
         curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
         echo "CONFIG_AUFS_FS=y" >>arch/arm64/configs/cannon_defconfig
